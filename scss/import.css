@@ -5001,7 +5001,6 @@ body.open-menu::after {
   .card-tc {
     padding-bottom: 0px !important;
     background-color: unset !important;
-    border: 1px solid red !important;
   }
 }
 .card-tc h1 {
