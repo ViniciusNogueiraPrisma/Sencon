@@ -1541,9 +1541,9 @@ $color: #007eff;
     padding-bottom: 80px;
 
     @media (max-width: 370px) {
+      border: 1px solid red !important;
       padding-bottom: 0px !important;
       background-color: unset !important;
-      border: 1px solid red !important;
     }
 
     h1 {

@@ -6008,9 +6008,9 @@ body.open-menu::after {
 }
 @media (max-width: 545px) and (max-width: 370px) {
   .card-tc {
+    border: 1px solid red !important;
     padding-bottom: 0px !important;
     background-color: unset !important;
-    border: 1px solid red !important;
   }
 }
 @media (max-width: 545px) {
