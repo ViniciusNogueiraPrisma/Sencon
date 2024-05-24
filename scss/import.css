@@ -6010,6 +6010,7 @@ body.open-menu::after {
   .card-tc {
     padding-bottom: 0px !important;
     background-color: unset !important;
+    border: 1px solid red !important;
   }
 }
 @media (max-width: 545px) {
