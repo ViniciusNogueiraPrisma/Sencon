@@ -6005,6 +6005,13 @@ body.open-menu::after {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+}
+@media (max-width: 545px) and (max-width: 370px) {
+  .card-tc {
+    padding-bottom: 0px !important;
+  }
+}
+@media (max-width: 545px) {
   .card-tc h1 {
     z-index: 2;
     position: relative;

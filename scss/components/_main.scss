@@ -1540,6 +1540,10 @@ $color: #007eff;
     padding-top: 80px;
     padding-bottom: 80px;
 
+    @media(max-width: 370px) {
+      padding-bottom: 0px !important;
+    }
+
     h1 {
       z-index: 2;
       position: relative;
