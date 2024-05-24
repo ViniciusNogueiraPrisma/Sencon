@@ -5031,11 +5031,6 @@ body.open-menu::after {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 370px) {
-  .card-tc h3 {
-    border: 1px solid red !important;
-  }
-}
 .card-tc h3 span {
   color: #1d1d1d;
   font-size: 20px;
