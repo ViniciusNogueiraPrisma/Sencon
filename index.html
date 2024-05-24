@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sencon - Calculadora de IR para Investimentos</title>
+
+    <link preload rel="stylesheet" href="./vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vendor/basic-table.min.css" />
+
+    <meta
+      name="description"
+      content="Calculadora de imposto de renda sobre Renda Variável rápida, fácil e segura. Foque nos seus investimentos e deixe o cálculo de IR com a Sencon."
+      property="og:description"
+    />
+    <meta
+      content="Sencon - Calculadora de IR para Investimentos"
+      property="twitter:title"
+    />
+    <meta
+      content="Calculadora de imposto de renda sobre Renda Variável rápida, fácil e segura. Foque nos seus investimentos e deixe o cálculo de IR com a Sencon."
+    />
+
+    <link rel="stylesheet" href="./vendor/slick.min.css" />
+    <link rel="stylesheet" href="./vendor/slick-theme.min.css" />
+    <link rel="stylesheet" href="./vendor/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://template.riweb.com.br/prisma/css/stories.dist.min.css"
+      media="all"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8c2d2553fe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="icon" href="./images/favicon-152px.png" type="image/x-icon" />
+    <meta property="og:image" content="" />
+
+    <!-- <link rel="stylesheet" href="./css/import.dist.min.css" /> -->
+
+    <link rel="stylesheet" href="./scss/import.css" />
+
+    <script src="vendor/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar headerFixoMenu">
+      <div class="container-sm navbar-after">
+        <a href="index.html">
+          <div class="logo">
+            <img
+              class="logo-black-home"
+              src="./images/logo-sencon.png"
+              alt=""
+            />
+          </div>
+        </a>
+
+        <div class="list-menu">
+          <ul class="navbar-nav">
+            <div class="navbar-items">
+              <div class="itens-main-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#section-sobre"
+                    id="navbarDropdownMenuLink"
+                  >
+                    Sobre
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#section-como"
+                    id="navbarDropdownMenuLink"
+                  >
+                    Como Funciona
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#section-perguntas"
+                    id="navbarDropdownMenuLink"
+                  >
+                    Perguntas Frequentes
+                  </a>
+                </li>
+              </div>
+
+              <li class="nav-item dropdown btn-nav-item">
+                <a
+                  class="btn-menu-a button-hover-cambio"
+                  href="https://bluetransfer.com.br/login/?action=register"
+                  target="_blank"
+                >
+                  Quero me cadastrar
+                </a>
+
+                <a
+                  href="https://bluetransfer.com.br/login/"
+                  target="_blank"
+                  class="btn-menu-entrar"
+                >
+                  <span>Entrar</span>
+                  <img src="images/icons/profile-bold.png" alt="" />
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <!-- <div class="search-btn">
+          <button
+            type="button"
+            class="open-searchbox btnSearch"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            accesskey="2"
+            title=""
+            data-bs-original-title="Pesquisar"
+          >
+            <i class="icon-busca"></i>
+          </button>
+        </div> -->
+      </div>
+
+      <div class="container-sm navbar-btns-after">
+        <div class="content-btns-after">
+          <div class="btn-navbar-1">
+            <a href="./withelabel.html">Abrir conta</a>
+            <img src="./images/icons/icon-carteira.svg" alt="" />
+          </div>
+          <div class="btn-navbar-2">
+            <a href="">Login</a>
+            <img src="./images/icons/profile-bold.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="searchbox">
+      <div class="container container-responsivo-full">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Digite aqui a sua busca"
+          />
+
+          <div class="input-group-text">
+            <button
+              type="button"
+              class="close-searchbox"
+              aria-label="Fechar Modal de Pesquiasr"
+            >
+              <span class="icon-exibir"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="search-help">
+          <small>Aperte Enter para pesquisar</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-cambio">
+      <div class="swiper mySwiper mySwiper-cambio">
+        <div class="container-sm text-banner-cambio">
+          <div class="main-text-banner">
+            <h1 data-aos="fade-up" data-aos-delay="200">
+              Agora a Sencon conecta pessoas e <br />
+              empresas por todo o mundo!
+            </h1>
+            <span data-aos="fade-up" data-aos-delay="200"
+              >Câmbio com BENEFÍCIOS para nossos clientes.
+            </span>
+            <a
+              data-aos="fade-up"
+              data-aos-delay="400"
+              class="button-hover-cambio"
+              target="_blank"
+              href="https://bluetransfer.com.br/login/?action=register"
+              >Quero me cadastrar</a
+            >
+          </div>
+        </div>
+
+        <div class="swiper-wrapper banner-cambio">
+          <div class="swiper-slide">
+            <img src="./images/banners-tc-cambio/banner-01-min.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banners-tc-cambio/banner-02-min.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banners-tc-cambio/banner-03-min.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banners-tc-cambio/banner-04-min.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-plataforma" id="section-sobre">
+      <div class="container-sm container-plataforma">
+        <div class="text-plataforma">
+          <span data-aos="fade-up" data-aos-delay="200"
+            >Nova plataforma de câmbio</span
+          >
+          <h1 data-aos="fade-up" data-aos-delay="400">
+            Sencon oferece uma <span>NOVA EXPERIÊNCIA 100%</span> online e 24
+            horas por dia para realizar suas transferências internacionais.
+          </h1>
+        </div>
+
+        <div class="container-cards-plataforma">
+          <div
+            class="cards-plataforma"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/usa.png" alt="" />
+              <span>USD</span>
+            </div>
+          </div>
+
+          <div
+            class="cards-plataforma"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/eng.png" alt="" />
+              <span>GBP</span>
+            </div>
+          </div>
+
+          <div
+            class="cards-plataforma"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/europeia.png" alt="" />
+              <span>EUR</span>
+            </div>
+          </div>
+
+          <div
+            class="cards-plataforma"
+            data-aos="fade-up"
+            data-aos-duration="1700"
+          >
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/japan.png" alt="" />
+              <span>JPY</span>
+            </div>
+          </div>
+
+          <div
+            class="cards-plataforma"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/china.png" alt="" />
+              <span>CNY</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-plataforma-swiper">
+          <div class="swiper mySwiper-fundos">
+            <div class="swiper-wrapper wrapper-fundos">
+              <div class="swiper-slide slides-moedas">
+                <div class="cards-plataforma">
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/brasil.png" alt="" />
+                    <span>BRL</span>
+                  </div>
+                  <div class="arrows-bandeira">
+                    <img src="./images/bandeiras/arrow-gray.png" alt="" />
+                    <img src="./images/bandeiras/arrow-blue.png" alt="" />
+                  </div>
+
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/usa.png" alt="" />
+                    <span>USD</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide slides-moedas">
+                <div class="cards-plataforma">
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/brasil.png" alt="" />
+                    <span>BRL</span>
+                  </div>
+                  <div class="arrows-bandeira">
+                    <img src="./images/bandeiras/arrow-gray.png" alt="" />
+                    <img src="./images/bandeiras/arrow-blue.png" alt="" />
+                  </div>
+
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/eng.png" alt="" />
+                    <span>GBP</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide slides-moedas">
+                <div class="cards-plataforma">
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/brasil.png" alt="" />
+                    <span>BRL</span>
+                  </div>
+                  <div class="arrows-bandeira">
+                    <img src="./images/bandeiras/arrow-gray.png" alt="" />
+                    <img src="./images/bandeiras/arrow-blue.png" alt="" />
+                  </div>
+
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/aud.png" alt="" />
+                    <span>AUD</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide slides-moedas">
+                <div class="cards-plataforma">
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/brasil.png" alt="" />
+                    <span>BRL</span>
+                  </div>
+                  <div class="arrows-bandeira">
+                    <img src="./images/bandeiras/arrow-gray.png" alt="" />
+                    <img src="./images/bandeiras/arrow-blue.png" alt="" />
+                  </div>
+
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/europeia.png" alt="" />
+                    <span>EUR</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide slides-moedas">
+                <div class="cards-plataforma">
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/brasil.png" alt="" />
+                    <span>BRL</span>
+                  </div>
+                  <div class="arrows-bandeira">
+                    <img src="./images/bandeiras/arrow-gray.png" alt="" />
+                    <img src="./images/bandeiras/arrow-blue.png" alt="" />
+                  </div>
+
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/japan.png" alt="" />
+                    <span>JPY</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide slides-moedas">
+                <div class="cards-plataforma">
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/brasil.png" alt="" />
+                    <span>BRL</span>
+                  </div>
+                  <div class="arrows-bandeira">
+                    <img src="./images/bandeiras/arrow-gray.png" alt="" />
+                    <img src="./images/bandeiras/arrow-blue.png" alt="" />
+                  </div>
+
+                  <div class="bandeira1">
+                    <img src="./images/bandeiras/china.png" alt="" />
+                    <span>CNY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination-fundos"></div>
+          </div>
+        </div>
+
+        <div class="container-card-tc">
+          <div class="card-tc">
+            <h1 data-aos="fade-up" data-aos-delay="600">
+              Nós da Sencon, <br />
+              damos boas-vindas <span>à você!</span>
+            </h1>
+
+            <h3 data-aos="fade-up" data-aos-delay="600">
+              Elegemos a plataforma online blueTransfer como provedora da
+              solução cambial para que você e/ou sua empresa realizem com toda a
+              <span>PRATICIDADE, AGILIDADE e SEGURANÇA</span> suas
+              transferências internacionais.
+            </h3>
+          </div>
+        </div>
+
+        <div class="novidades-tc">
+          <div class="novidades-title">
+            <h1 data-aos="fade-up" data-aos-delay="400">
+              Gostou da novidade? <br />
+              Então venha com a gente!
+            </h1>
+            <h4 data-aos="fade-up" data-aos-delay="800">
+              Com apenas poucos passos você cria seu cadastro e aproveita a
+              melhor EXPERIÊNCIA da parceria blueTransfer e Sencon:
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-sm container-bluetransfer">
+      <div class="bluetransfer">
+        <div class="imgs-main">
+          <img
+            id="wallet"
+            src="./images/icons/icon_wallet.png"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+          <img
+            id="brl-azul"
+            src="./images/icons/icon-brl-azul.png"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+          <img
+            id="cambio-icon"
+            src="./images/logo-sencon.png"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+          <img
+            id="icon-setas"
+            src="./images/icons/icon-setas.png"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="400"
+          />
+          <img
+            id="img-bluetransfer"
+            src="./images/icons/icon-bluetransfer.png"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+          <img
+            id="img-brl-verde"
+            src="./images/icons/icon-brl-verde.png"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+          <img
+            id="icon-globe"
+            src="./images/icons/icon-globe.png"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+        </div>
+
+        <div class="imgs-mobile">
+          <img id="wallet" src="./images/icons/icon_wallet.png" alt="" />
+          <img id="brl-mobile" src="./images/brl-mobile.png" alt="" />
+          <img
+            id="cambio-icon"
+            src="./images/logo-sencon.png"
+            alt=""
+          />
+
+          <!-- <img id="arrow-mobile" src="./images/arrows-mobile.png" alt="" /> -->
+          <img id="icon-setas" src="./images/icons/icon-setas.png" alt="" />
+          <img
+            id="blue-mobile"
+            src="./images/icons/icon-bluetransfer.png"
+            alt=""
+          />
+          <img id="usd-mobile" src="./images/usd-mobile.png" alt="" />
+          <img id="globe-mobile" src="/images/icons/icon-globe.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-sm fechamento-cambio" id="section-como">
+      <div class="fechamento-title">
+        <h1 data-aos="fade-up" data-aos-delay="200">
+          Como realizar seu Fechamento de Câmbio por meio da plataforma?
+        </h1>
+        <h3 data-aos="fade-up" data-aos-delay="400">
+          <span>Sua remessa de forma fácil e intuitiva.</span> Salve, repita a
+          operação e acompanhe o seu histórico de fechamento sempre que
+          necessário.
+        </h3>
+      </div>
+
+      <div class="container-cadastrar">
+        <div class="cadastrar-itens">
+          <div class="cadastrar-texts">
+            <div class="texts-main">
+              <div class="number-last">
+                <span class="change-color-number">01</span>
+              </div>
+              <div
+                class="texts-content"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <h1 class="change-color-number">Cadastre-se</h1>
+                <h3>
+                  Efetue o <span>cadastro online</span> de forma rápida e sem
+                  burocracia, são necessárias apenas algumas informações e
+                  documentos.
+                </h3>
+              </div>
+            </div>
+
+            <div class="cadastrar-number">
+              <h1
+                class="change-color-number"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                01
+              </h1>
+            </div>
+
+            <div class="cadastrar-cards">
+              <img class="modal1" src="./images/modals/modal.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cadastrar-itens">
+          <div class="cadastrar-texts cadastrar-texts-last">
+            <div class="cadastrar-cards2">
+              <img class="modal2" src="./images/modals/modal2.png" alt="" />
+            </div>
+
+            <div class="cadastrar-number">
+              <h1 class="change-color-number">02</h1>
+            </div>
+
+            <div class="texts-main">
+              <div class="number-last">
+                <span class="change-color-number">02</span>
+              </div>
+
+              <div
+                class="texts-content"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <h1 class="change-color-number">Confirme a Operação</h1>
+                <h3>
+                  Com o cadastro aprovado, selecione o tipo da
+                  <span>operação internacional</span>
+                  e siga os passos através de nosso processo guiado e inclua as
+                  informações de sua remessa para o exterior.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cadastrar-itens">
+          <div class="cadastrar-texts">
+            <div class="texts-main">
+              <div class="number-last">
+                <span class="change-color-number">03</span>
+              </div>
+              <div
+                class="texts-content"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <h1 class="change-color-number">Efetue o Pagamento</h1>
+                <h3>
+                  Ao confirmar sua operação internacional realize o
+                  <span>pagamento do total calculado em reais via TED</span> a
+                  partir de seu banco para a conta corrente indicada na
+                  plataforma..
+                </h3>
+              </div>
+            </div>
+
+            <div class="cadastrar-number">
+              <h1
+                class="change-color-number"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                03
+              </h1>
+            </div>
+
+            <div class="cadastrar-cards3">
+              <img class="modal3" src="./images/modals/modal3.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cadastrar-itens">
+          <div class="cadastrar-texts cadastrar-texts-last">
+            <div class="cadastrar-cards4">
+              <img class="modal4" src="./images//modals/modal4.png" alt="" />
+            </div>
+
+            <div class="cadastrar-number">
+              <h1
+                class="change-color-number"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                04
+              </h1>
+            </div>
+
+            <div class="texts-main">
+              <div class="number-last">
+                <span class="change-color-number">04</span>
+              </div>
+              <div
+                class="texts-content"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <h1 class="change-color-number">Valor Transferido</h1>
+                <h3>
+                  Identificado o pagamento, sua remessa segue para registo no
+                  Banco Central do Brasil e envio para o exterior
+                  <span>podendo até ser concluída no mesmo dia.</span> Consulte
+                  disponibilidade.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="title-novidades">
+        <h1 data-aos="fade-up" data-aos-delay="200">
+          Gostou da novidade? <br />
+          Então venha com a gente!
+        </h1>
+
+        <a
+          data-aos="fade-up"
+          data-aos-delay="400"
+          href="https://bluetransfer.com.br/login/?action=register"
+          target="_blank"
+          class="button-hover-cambio"
+          >Quero me cadastrar</a
+        >
+      </div>
+    </div>
+
+    <div class="section-faq">
+      <div class="container-sm container-faq">
+        <div class="contatos-faq" data-aos="fade-up" data-aos-delay="400">
+          <div class="infos1" data-aos="fade-up" data-aos-delay="600">
+            <img src="./images/icons/icon-g-phone.png" alt="" />
+            <div class="texts-infos1">
+              <span>Em caso de dúvidas,</span>
+              <h1>envie uma mensagem e fale conosco.</h1>
+            </div>
+          </div>
+          <div class="infos2" data-aos="fade-up" data-aos-delay="600">
+            <h1>
+              <a
+                class="link-wpp"
+                target="_blank"
+                href="mailto:cambio@sencon.com.br"
+                >cambio@sencon.com.br</a
+              >
+              <br />
+              <a
+                href="https://api.whatsapp.com/send?phone=5511932829554"
+                class="link-wpp"
+                target="_blank"
+                >+55 (11) 9 3282-9554</a
+              >
+            </h1>
+          </div>
+        </div>
+
+        <div class="itens-faq" id="section-perguntas">
+          <div class="accordion-home">
+            <div class="titles-accordion">
+              <h1 data-aos="fade-up" data-aos-delay="200">
+                Perguntas Frequentes
+              </h1>
+
+              <span
+                class="span-accordion"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                >Tire suas dúvidas sobre a parceria entre a blueTransfer e
+                Sencon</span
+              >
+            </div>
+
+            <div class="accordion_item" data-aos="fade-up" data-aos-delay="300">
+              <div class="accordion_header">
+                <span>
+                  01. Tenho um conta internacional. Posso fazer uma remessa para
+                  essa conta via plataforma?
+                </span>
+                <div class="icon"><i class="fa-solid fa-plus themas"></i></div>
+              </div>
+
+              <div class="accordion_content" style="height: 0px">
+                <p>
+                  Sim, você poderia realizar o envio de remessa para a sua conta
+                  internacional com toda a praticidade da plataforma da
+                  blueTransfer. Para realizar esta operação com agilidade, tenha
+                  em mãos os dados da sua conta internacional.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion_item" data-aos="fade-up" data-aos-delay="600">
+              <div class="accordion_header">
+                <span> 02. Posso trazer dinheiro do exterior? </span>
+                <div class="icon"><i class="fa-solid fa-plus themas"></i></div>
+              </div>
+
+              <div class="accordion_content">
+                <p>
+                  Sim, você poderá trazer dinheiro do exterior pela plataforma
+                  da blueTransfer. Na plataforma, siga o passo a passo para
+                  realizar a operação de retorno do dinheiro em diversas moedas
+                  estrangeiras. O seu IBAN (padrão de identidade internacional
+                  de conta bancária) está disponível para consulta no seu
+                  cadastro, dentro da plataforma.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion_item" data-aos="fade-up" data-aos-delay="800">
+              <div class="accordion_header">
+                <span> 03. Como enviar dinheiro para o exterior? </span>
+                <div class="icon"><i class="fa-solid fa-plus themas"></i></div>
+              </div>
+
+              <div class="accordion_content">
+                <p>
+                  Você poderá enviar dinheiro para diversos países com toda a
+                  praticidade que a plataforma blueTransfer oferece. Após a
+                  confirmação dos valores para remessa, o sistema fornecerá os
+                  dados bancários para pagamento. Faça o pagamento via
+                  transferência entre contas (mesmo banco) ou TED. Importante! A
+                  transferência deverá partir obrigatoriamente de uma conta
+                  bancária de sua titularidade.
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion_item"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
+              <div class="accordion_header">
+                <span> 04. Quem é a blueTransfer? </span>
+                <div class="icon"><i class="fa-solid fa-plus themas"></i></div>
+              </div>
+
+              <div class="accordion_content">
+                <p>
+                  A blueTransfer é uma plataforma de transferências
+                  internacionais que atua como correspondente cambial do Banco
+                  Master, registrada e autorizada pelo Banco Central do Brasil,
+                  criada por quem entende de câmbio, tecnologia e de pessoas,
+                  como você. Com atendimento humanizado, conta com profissionais
+                  com mais de 20 anos de experiência no mercado de câmbio, sendo
+                  assim uma plataforma digital inteligente para operações de
+                  câmbio. Estão preparados para oferecer uma experiência digital
+                  única e totalmente descomplicada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-sm container-footer">
+        <div class="logo-social">
+          <div class="logo-contato">
+            <div class="imgs-logo">
+              <img src="./images/logo-sencon.png" alt="" />
+            </div>
+
+            <div class="texts-logo-contatos">
+              <h2>Endereço:</h2>
+              <span
+                ><a
+                  target="_blank"
+                  href="https://maps.app.goo.gl/e91UinzMHUE4eJmP7"
+                  >Av. Pres. Juscelino Kubitschek, 1830 - Torre 2 - 5° andar -
+                  Conjunto 52, Vila Nova Conceição, São Paulo - SP, 04543-900</a
+                ></span
+              >
+            </div>
+
+            <div class="texts-logo-contatos">
+              <h2>Telefone:</h2>
+              <span
+                ><a
+                  target="_blank"
+                  href="https://api.whatsapp.com/send?phone=5511932829554"
+                  >+55 (11) 9 3282-9554 &nbsp</a
+                >
+                | &nbsp (11) 4003-6048
+                <br />
+                Nosso time de atendimento está disponível de segunda à
+                sexta-feira, das 09h às 19h.</span
+              >
+            </div>
+
+            <div class="texts-logo-contatos links-footer">
+              <h2>Links:</h2>
+              <span>
+                <a
+                  target="_blank"
+                  href="https://tc.com.br/termo-lgpd?_gl=1*1pjac88*_ga*MzI5MDM0MDc0LjE2OTAyMTc2Njg.*_ga_04JRJYZ32H*MTY5Njk1NzMxMy42LjAuMTY5Njk1NzMxMy42MC4wLjA"
+                  >Política de privacidade</a
+                ></span
+              >
+            </div>
+          </div>
+
+          <div class="redes-sociais-footer">
+            <span>Redes Sociais:</span>
+            <div class="imgs-redes">
+              <a href="https://www.instagram.com/senconbr/" target="_blank"
+                ><img src="./images/icons/insta-white.png" alt=""
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/senconbr/"
+                target="_blank"
+                ><img src="./images/icons/linkedin-white.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="itens-footer-last">
+          <div class="imagem-logo-last">
+            <img src="./images/logo-sencon.png" alt="" />
+          </div>
+
+          <div class="infos-last">
+            <div class="texts-logo-contatos">
+              <h2>Endereço:</h2>
+              <span
+                >R. Leopoldo Couto Magalhães Júnior, 758 - 11° andar - Itaim
+                Bibi, São Paulo - SP, 04542-000</span
+              >
+            </div>
+
+            <div class="texts-logo-contatos">
+              <h2>Telefone:</h2>
+              <span
+                ><a
+                  target="_blank"
+                  href="https://api.whatsapp.com/send?phone=5511932829554"
+                  >+55 (11) 9 3282-9554 &nbsp</a
+                >
+                | &nbsp (11) 4003-6048
+                <br />
+                Nosso time de atendimento está disponível de segunda à
+                sexta-feira, das 09h às 19h.</span
+              >
+            </div>
+
+            <div class="texts-logo-contatos links-footer">
+              <h2>Links:</h2>
+              <span>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/url?q=https://tc.com.br/termo-lgpd?_gl%3D1*1pjac88*_ga*MzI5MDM0MDc0LjE2OTAyMTc2Njg.*_ga_04JRJYZ32H*MTY5Njk1NzMxMy42LjAuMTY5Njk1NzMxMy42MC4wLjA&source=gmail&ust=1697549294086000&usg=AOvVaw0O9pUI5dBNZDbijRtA2yj1"
+                  >Política de privacidade</a
+                ></span
+              >
+            </div>
+
+            <div class="redes-sociais-footer">
+              <span>Redes Sociais:</span>
+              <div class="imgs-redes">
+                <a
+                  href="https://www.instagram.com/tcinvestimentos/"
+                  target="_blank"
+                  ><img src="./images/icons/insta-white.png" alt=""
+                /></a>
+                <a
+                  href="https://br.linkedin.com/company/tcinvestimentos"
+                  target="_blank"
+                  ><img src="./images/icons/linkedin-white.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="texts-footer">
+          <span
+            >Sencon atua na aproximação de clientes para os serviços de câmbio
+            por meio da plataforma da blueTransfer Tecnologia e Serviços
+            Financeiros Ltda., correspondente cambial autorizado pelo Banco
+            Central do Brasil.
+          </span>
+        </div>
+
+        <div class="bluetransfer-bcb">
+          <div class="logo-blue">
+            <img src="./images/bluetransfer-footer.png" alt="" />
+            <span
+              >Bluetransfer Tecnologia e Serviços Financeiros Ltda - CNPJ
+              07.312.585/0001-24, Correspondente Cambial autorizado pelo Banco
+              Cental do Brasil.</span
+            >
+          </div>
+
+          <div class="logo-bcb">
+            <img src="./images/logo-banco-do-brasil.png" alt="" />
+          </div>
+        </div>
+
+        <div class="bluetransfer-bcb-last">
+          <div class="imgs-bluetransfer-bcb-last">
+            <img
+              class="img-blue-last"
+              src="./images/bluetransfer-footer.png"
+              alt=""
+            />
+            <img
+              class="img-bcb-last"
+              src="./images/logo-banco-do-brasil.png"
+              alt=""
+            />
+          </div>
+
+          <span
+            >Bluetransfer Tecnologia e Serviços Financeiros Ltda - CNPJ
+            07.312.585/0001-24, Correspondente Cambial autorizado pelo Banco
+            Cental do Brasil.</span
+          >
+        </div>
+
+        <div class="prisma-cambio">
+          <span>© Todos os direitos reservados 2023 </span>
+          <a href="https://www.riprisma.com/" target="_blank"
+            ><img src="./images/Selo Prisma.png" alt=""
+          /></a>
+          <div class="voltar-topo" id="voltar-ao-topo">
+            <span>Voltar ao topo</span>
+            <i class="fa-solid fa-arrow-up" style="color: #bbbbbb"></i>
+          </div>
+        </div>
+
+        <div class="prisma-cambio-last">
+          <div class="itens-prisma-last">
+            <span>© Todos os direitos reservados 2023 </span>
+          </div>
+          <div class="voltar-topo" id="voltar-ao-topo">
+            <img src="./images/Selo Prisma.png" alt="" />
+            <span
+              >Voltar ao topo
+              <i class="fa-solid fa-arrow-up" style="color: #bbbbbb"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="whatsapp-button">
+      <a
+        href="https://api.whatsapp.com/send?phone=5511932829554"
+        target="_blank"
+      >
+        <img src="images/icon-wpp.png" alt="WhatsApp" />
+      </a>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+
+    <script defer src="vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script defer src="./js/changeColor.js"></script>
+    <script defer src="vendor/counterup.js"></script>
+    <script defer src="js/carrosel.js"></script>
+    <script defer src="vendor/menuFixo.js"></script>
+    <script defer src="vendor/aos.js"></script>
+    <script defer src="vendor/basic-table.min.js"></script>
+    <script defer src="vendor/slick.min.js"></script>
+    <script defer src="js/zoomScroll.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
