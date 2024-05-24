@@ -4997,6 +4997,13 @@ body.open-menu::after {
   background-color: #fafafa;
   width: 876px;
 }
+@media (max-width: 370px) {
+  .card-tc {
+    padding-bottom: 0px !important;
+    background-color: unset !important;
+    border: 1px solid red !important;
+  }
+}
 .card-tc h1 {
   padding-bottom: 24px;
   color: #1d1d1d;
@@ -5023,6 +5030,11 @@ body.open-menu::after {
   word-wrap: break-word;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 370px) {
+  .card-tc h3 {
+    border: 1px solid red !important;
+  }
 }
 .card-tc h3 span {
   color: #1d1d1d;
@@ -6005,15 +6017,6 @@ body.open-menu::after {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-}
-@media (max-width: 545px) and (max-width: 370px) {
-  .card-tc {
-    border: 1px solid red !important;
-    padding-bottom: 0px !important;
-    background-color: unset !important;
-  }
-}
-@media (max-width: 545px) {
   .card-tc h1 {
     z-index: 2;
     position: relative;
